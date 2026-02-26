@@ -49,7 +49,7 @@ const FallingLeaves = () => {
           className="absolute"
         >
           <img 
-            src="/src/assets/images/la.png" 
+            src="/images/la.png" 
             alt="leaf" 
             style={{ 
               width: leaf.size, 

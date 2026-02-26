@@ -6,9 +6,9 @@ const SocialProof = () => {
   const { t } = useLanguage();
 
   const testimonials = [
-    { name: t.social.n1, role: t.social.r1, content: t.social.c1, img: "/src/assets/images/avatar-1.jpg" },
-    { name: t.social.n2, role: t.social.r2, content: t.social.c2, img: "/src/assets/images/avatar-2.jpg" },
-    { name: t.social.n3, role: t.social.r3, content: t.social.c3, img: "/src/assets/images/avatar-3.jpg" }
+    { name: t.social.n1, role: t.social.r1, content: t.social.c1, img: "/images/avatar-1.jpg" },
+    { name: t.social.n2, role: t.social.r2, content: t.social.c2, img: "/images/avatar-2.jpg" },
+    { name: t.social.n3, role: t.social.r3, content: t.social.c3, img: "/images/avatar-3.jpg" }
   ];
 
   return (

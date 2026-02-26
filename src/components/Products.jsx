@@ -27,7 +27,7 @@ const Products = () => {
           {productList.map((product, index) => (
             <motion.div key={product.id} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.1 }} viewport={{ once: true }} className="group flex flex-col h-full">
               <div className="bg-brand-beige aspect-[4/5] rounded-[30px] overflow-hidden mb-6 relative border border-transparent group-hover:border-brand-gold/30 transition-all shadow-sm">
-                <img src={`/src/assets/images/product-${product.id}.png`} className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-700" alt={product.name} />
+                <img src={`/images/product-${product.id}.png`} className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-700" alt={product.name} />
                 <span className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-[8px] font-bold uppercase tracking-widest text-brand-orange shadow-sm">{product.tag}</span>
               </div>
               <div className="flex flex-col flex-1">

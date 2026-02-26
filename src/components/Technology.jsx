@@ -50,7 +50,7 @@ const Technology = () => {
             >
               <div className="bg-white p-6 rounded-[40px] shadow-2xl border-4 border-white/10">
                 <img
-                  src="/src/assets/images/patents.png"
+                  src="/images/patents.png"
                   alt="Patents"
                   className="w-full h-auto rounded-2xl"
                 />

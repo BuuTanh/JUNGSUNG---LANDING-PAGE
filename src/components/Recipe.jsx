@@ -8,9 +8,9 @@ const Recipe = () => {
   const [activeTab, setActiveTab] = useState('soup');
 
   const recipes = [
-    { id: 'soup', icon: <Soup />, label: t.recipe.soup, productImg: '/src/assets/images/product-4.png', dishImg: '/src/assets/images/dish-soup.jpg', desc: t.recipe.r1 },
-    { id: 'stir', icon: <UtensilsCrossed />, label: t.recipe.stir, productImg: '/src/assets/images/product-1.png', dishImg: '/src/assets/images/dish-stir.jpg', desc: t.recipe.r2 },
-    { id: 'grill', icon: <Flame />, label: t.recipe.grill, productImg: '/src/assets/images/product-3.png', dishImg: '/src/assets/images/dish-grill.jpg', desc: t.recipe.r3 }
+    { id: 'soup', icon: <Soup />, label: t.recipe.soup, productImg: '/images/product-4.png', dishImg: '/images/dish-soup.jpg', desc: t.recipe.r1 },
+    { id: 'stir', icon: <UtensilsCrossed />, label: t.recipe.stir, productImg: '/images/product-1.png', dishImg: '/images/dish-stir.jpg', desc: t.recipe.r2 },
+    { id: 'grill', icon: <Flame />, label: t.recipe.grill, productImg: '/images/product-3.png', dishImg: '/images/dish-grill.jpg', desc: t.recipe.r3 }
   ];
 
   const activeRecipe = recipes.find(r => r.id === activeTab);

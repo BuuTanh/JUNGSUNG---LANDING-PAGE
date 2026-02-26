@@ -24,7 +24,7 @@ const Awards = () => {
           </div>
           
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="bg-brand-beige p-8 rounded-[50px] border border-brand-brown/5 relative shadow-inner">
-            <img src="/src/assets/images/cert-grid.png" className="w-full h-auto" alt="Certificates" />
+            <img src="/images/cert-grid.png" className="w-full h-auto" alt="Certificates" />
             <div className="absolute -top-6 -right-4 w-28 h-28 bg-brand-brown rounded-full flex items-center justify-center text-white text-center p-5 shadow-2xl border-4 border-white rotate-12 transition-transform hover:rotate-0 duration-500">
                <p className="text-[9px] font-bold uppercase leading-tight italic text-brand-gold">{t.awards.badge}</p>
             </div>

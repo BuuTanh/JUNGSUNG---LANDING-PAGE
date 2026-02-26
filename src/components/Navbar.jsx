@@ -31,7 +31,7 @@ const Navbar = () => {
         {/* Cụm Logo */}
         <div className="flex-1 flex items-center">
           <a href="#hero" className="flex items-center gap-3 group">
-            <img src="/src/assets/images/logo.png" alt="Logo" className="h-8 md:h-10 w-auto object-contain" />
+            <img src="/images/logo.png" alt="Logo" className="h-8 md:h-10 w-auto object-contain" />
             <div className="flex items-center gap-1.5 leading-none">
               <span className="text-brand-brown font-serif font-bold text-lg md:text-xl tracking-tighter">JUNGSUNG</span>
               <span className="text-brand-gold font-serif font-medium text-lg md:text-xl tracking-tighter">Gitden</span>

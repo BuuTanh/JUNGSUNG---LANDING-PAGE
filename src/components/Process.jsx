@@ -28,7 +28,7 @@ const Process = () => {
           {steps.map((step, index) => (
             <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.1 }} viewport={{ once: true }} className="relative group">
               <div className="aspect-square bg-brand-beige rounded-[40px] overflow-hidden mb-6 shadow-sm border border-transparent group-hover:border-brand-gold/20 transition-all duration-500">
-                <img src={`/src/assets/images/process-${index + 1}.jpg`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt={step.title} />
+                <img src={`/images/process-${index + 1}.jpg`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt={step.title} />
               </div>
               <span className="text-5xl font-serif text-brand-gold/10 absolute top-4 left-6">{step.id}</span>
               <h3 className="text-lg font-bold text-brand-brown mb-2 px-2">{step.title}</h3>

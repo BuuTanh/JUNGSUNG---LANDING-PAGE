@@ -11,7 +11,7 @@ const FounderStory = () => {
           
           <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:col-span-7 relative">
             <div className="aspect-[3/2] bg-brand-beige rounded-[60px] overflow-hidden shadow-2xl border-8 border-white">
-              <img src="/src/assets/images/founder.jpg" className="w-full h-full object-cover" alt="Founder" />
+              <img src="/images/founder.jpg" className="w-full h-full object-cover" alt="Founder" />
             </div>
 
             <div className="absolute -bottom-8 right-8 bg-brand-brown p-6 md:p-8 rounded-[40px] text-white shadow-2xl flex gap-6 md:gap-10 border-4 border-white">

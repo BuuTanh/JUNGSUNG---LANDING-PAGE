@@ -76,7 +76,7 @@ const Hero = () => {
         >
           <div className="w-full max-w-[500px] aspect-[5/5] bg-white rounded-[60px] overflow-hidden shadow-[0_0px_100px_rgba(0,0,0,0.08)] border-[12px] border-white relative z-10">
             <img
-              src="/src/assets/images/hero-bg.jpg"
+              src="/images/hero-bg.jpg"
               alt="JungSung Collection"
               className="w-full h-full object-cover scale-105"
               onError={(e) => {
