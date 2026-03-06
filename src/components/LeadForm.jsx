@@ -26,12 +26,29 @@ const LeadForm = () => {
               </div>
             </div>
 
-            <motion.form onSubmit={(e) => { e.preventDefault(); setIsSubmitted(true); }} className="bg-white p-8 md:p-10 rounded-[40px] flex flex-col gap-4 shadow-xl">
-              <input required type="text" placeholder={t.form.name} className="bg-gray-50 border-none p-4 rounded-2xl text-xs outline-none focus:ring-2 focus:ring-brand-gold transition-all" />
-              <input required type="email" placeholder={t.form.email} className="bg-gray-50 border-none p-4 rounded-2xl text-xs outline-none focus:ring-2 focus:ring-brand-gold transition-all" />
-              <input required type="tel" placeholder={t.form.phone} className="bg-gray-50 border-none p-4 rounded-2xl text-xs outline-none focus:ring-2 focus:ring-brand-gold transition-all" />
-              <textarea required placeholder={t.form.addr} rows="3" className="bg-gray-50 border-none p-4 rounded-2xl text-xs outline-none focus:ring-2 focus:ring-brand-gold transition-all"></textarea>
-              <select required className="bg-gray-50 border-none p-4 rounded-2xl text-xs outline-none cursor-pointer appearance-none">
+            <motion.form
+              onSubmit={(e) => {
+                e.preventDefault();
+                setIsSubmitted(true);
+                // Notify HubSpot of the form submission
+                if (window._hsq) {
+                  window._hsq.push(['identify', {
+                    email: e.target.email.value,
+                    firstname: e.target.firstname.value,
+                    phone: e.target.phone.value,
+                    address: e.target.address.value,
+                    product_interest: e.target.product_interest.value
+                  }]);
+                  window._hsq.push(['trackEvent', { id: 'Form Submitted' }]);
+                }
+              }}
+              className="bg-white p-8 md:p-10 rounded-[40px] flex flex-col gap-4 shadow-xl"
+            >
+              <input required name="firstname" type="text" placeholder={t.form.name} className="bg-gray-50 border-none p-4 rounded-2xl text-xs outline-none focus:ring-2 focus:ring-brand-gold transition-all" />
+              <input required name="email" type="email" placeholder={t.form.email} className="bg-gray-50 border-none p-4 rounded-2xl text-xs outline-none focus:ring-2 focus:ring-brand-gold transition-all" />
+              <input required name="phone" type="tel" placeholder={t.form.phone} className="bg-gray-50 border-none p-4 rounded-2xl text-xs outline-none focus:ring-2 focus:ring-brand-gold transition-all" />
+              <textarea required name="address" placeholder={t.form.addr} rows="3" className="bg-gray-50 border-none p-4 rounded-2xl text-xs outline-none focus:ring-2 focus:ring-brand-gold transition-all"></textarea>
+              <select required name="product_interest" className="bg-gray-50 border-none p-4 rounded-2xl text-xs outline-none cursor-pointer appearance-none">
                 <option value="">{t.form.interest}</option>
                 {products.map(p => <option key={p} value={p}>{p}</option>)}
               </select>
