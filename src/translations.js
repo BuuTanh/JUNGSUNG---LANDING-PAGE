@@ -34,6 +34,10 @@ export const translations = {
       p3_t: "Trung thực",
       p3_d: "Cam kết '3 Không': Không chất bảo quản, Không MSG, Không hương liệu.",
     },
+    martech: {
+      title: "TVC MarTech",
+      subtitle: "Khám phá câu chuyện của chúng tôi qua những thước phim chân thực.",
+    },
     process: {
       title: "Quy trình sản xuất tỉ mỉ",
       subtitle: "Minh chứng cho chất lượng qua sự minh bạch.",
@@ -157,6 +161,10 @@ export const translations = {
       p3_t: "Honesty",
       p3_d: "Commitment to '3 Free': No Preservatives, No MSG, No Additives.",
     },
+    martech: {
+      title: "TVC MarTech",
+      subtitle: "Explore our story through authentic cinematic visuals.",
+    },
     process: {
       title: "Meticulous Production",
       subtitle: "Proven quality through processing transparency.",
@@ -279,6 +287,10 @@ export const translations = {
       p2_d: "200-300 메시 수제 분쇄 공정의 정교함.",
       p3_t: "정직함",
       p3_d: "3無 원칙: 보존료, MSG, 합성착향료 무첨가.",
+    },
+    martech: {
+      title: "TVC MarTech",
+      subtitle: "진솔한 영상을 통해 우리의 이야기를 만나보세요.",
     },
     process: {
       title: "정교한 제조 과정",

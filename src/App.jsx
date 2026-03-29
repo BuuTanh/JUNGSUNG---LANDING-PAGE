@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import FounderStory from './components/FounderStory';
 import Philosophy from './components/Philosophy';
+import TVCMarTech from './components/TVCMarTech';
 import Process from './components/Process';
 import Technology from './components/Technology';
 import Products from './components/Products';
@@ -19,11 +20,12 @@ function App() {
       {/* 2. Đặt ở đây để lá rơi xuyên suốt toàn bộ website */}
 
       <FallingLeaves />
-      
+
       <Navbar />
       <div id="hero"><Hero /></div>
       <div id="founder"><FounderStory /></div>
       <div id="philosophy"><Philosophy /></div>
+      <div id="martech"><TVCMarTech /></div>
       <div id="process"><Process /></div>
       <Technology />
       <div id="products"><Products /></div>
@@ -32,8 +34,8 @@ function App() {
       <SocialProof />
       <LeadForm />
       <Footer />
-      
-      
+
+
       <NotificationPopup />
     </div>
   );
